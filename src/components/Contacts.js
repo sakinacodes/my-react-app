@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Contact from './Contact'
+
 const Contacts = () => {
   const [contacts, setshowAddTask] = useState([
     { id: 1, name: 'Jon Doe', email: 'jon@gmail.com', phone: '333-333-333' },

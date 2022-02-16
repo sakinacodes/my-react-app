@@ -1,11 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FaAngleDown } from 'react-icons/fa'
-;<link rel='stylesheet' href='../src/styles/custom.css' />
+<link rel='stylesheet' href='../src/styles/custom.css' />
+
 const Contact = (props) => {
   const { name, email, phone } = props.contact
 
-  const state = {}
+  const state = {
+    showContactInfo: true
+  }
 
   const onShowClick = () => {
     console.log(state)
@@ -13,12 +16,13 @@ const Contact = (props) => {
   return (
     <div className='container p-5'>
       <div className=' flex flex-col rounded-sm p-4 border-2'>
-        <h1 className='text-xl flex flex-row justify-center items-center font-bold p-2'>
+        <h1 className='text-xl flex flex-row items-center font-bold p-2'>
           {name}
           <FaAngleDown
             className='text-lg'
+            onClick={onShowClick}
             style={{ color: 'red', cursor: 'pointer', fontSize: '2rem' }}
-            onClick={onShowClick()}
+            
           />
         </h1>
         <ul className='list-none list-outside'>
