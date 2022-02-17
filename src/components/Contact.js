@@ -14,12 +14,13 @@ const Contact = (props) => {
   return (
     <div className='container p-5'>
       <div className=' flex flex-col rounded-sm p-4 border-2'>
-        <h1 className='text-xl flex flex-row justify-center items-center font-bold p-2'>
+        <h1 className='text-xl flex flex-row items-center font-bold p-2'>
           {name}
           <FaAngleDown
             className='text-lg'
             onClick={Showit}
             style={{ color: 'red', cursor: 'pointer', fontSize: '2rem' }}
+
           />
         </h1>
         {ShowDetail && (

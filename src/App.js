@@ -8,7 +8,7 @@ function App() {
 
  
   return (
-    <div className=''>
+    <div className='container mx-auto'>
       <Header branding='Contact Manager1' />
       <Contacts />
     </div>
